@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Irrigation System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Irrigation System</h1>
+
+        <form id="irrigationForm">
+            <label for="cropType">Crop Type:</label>
+            <input type="text" id="cropType" name="cropType" required>
+
+            <label for="soilMoisture">Soil Moisture Level (%):</label>
+            <input type="number" id="soilMoisture" name="soilMoisture" required>
+
+            <label for="fieldSize">Field Size (Acres):</label>
+            <input type="number" id="fieldSize" name="fieldSize" required>
+
+            <label for="waterRequirement">Crop Water Requirement (mm/day):</label>
+            <input type="number" id="waterRequirement" name="waterRequirement" required>
+
+            <label for="soilType">Soil Type:</label>
+            <input type="text" id="soilType" name="soilType" required>
+
+            <label for="irrigationEfficiency">Irrigation Efficiency (%):</label>
+            <input type="number" id="irrigationEfficiency" name="irrigationEfficiency" required>
+
+            <button type="button" onclick="calculateIrrigation()">Submit</button>
+        </form>
+
+        <div id="results">
+            <h2>Results</h2>
+            <p id="irrigationNeeded"></p>
+            <p id="waterDeficit"></p>
+            <p id="totalWaterNeeded"></p>
+            <p id="effectiveWaterRequirement"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
