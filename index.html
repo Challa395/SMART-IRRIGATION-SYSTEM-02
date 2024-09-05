@@ -11,11 +11,17 @@
         <h1>Smart Irrigation System Calculator</h1>
         <form id="irrigationForm">
             <label for="cropType">Crop Type:</label>
-            <select id="cropType" name="cropType">
+            <select id="cropType" name="cropType" required>
                 <option value="corn">Corn</option>
                 <option value="wheat">Wheat</option>
-                <option value="soy">Soy</option>
-                <!-- Add more crop types as needed -->
+                <option value="soy">Soybean</option>
+                <option value="rice">Rice</option>
+                <option value="barley">Barley</option>
+                <option value="oats">Oats</option>
+                <option value="potato">Potato</option>
+                <option value="tomato">Tomato</option>
+                <option value="lettuce">Lettuce</option>
+                <option value="carrot">Carrot</option>
             </select><br>
 
             <label for="soilMoisture">Soil Moisture Level (%):</label>
@@ -28,10 +34,12 @@
             <input type="number" id="cropWaterRequirement" name="cropWaterRequirement" step="0.1" required><br>
 
             <label for="soilType">Soil Type:</label>
-            <select id="soilType" name="soilType">
+            <select id="soilType" name="soilType" required>
                 <option value="loamy">Loamy</option>
                 <option value="sandy">Sandy</option>
                 <option value="clay">Clay</option>
+                <option value="silt">Silt</option>
+                <option value="peat">Peat</option>
             </select><br>
 
             <label for="irrigationEfficiency">Irrigation Efficiency (%):</label>
@@ -40,9 +48,4 @@
             <button type="button" onclick="calculateIrrigation()">Calculate</button>
         </form>
 
-        <div id="result"></div>
-    </div>
-
-    <script src="script.js"></script>
-</body>
-</html>
+        <div id="result"></d
